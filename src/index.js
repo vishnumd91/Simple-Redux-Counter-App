@@ -9,7 +9,9 @@ import rootReducer from './reducers';
 // import { composeWithDevTools } from 'redux-devtools-extension';
 import { createLogger } from 'redux-logger';
 
-const logger = createLogger();
+const logger = createLogger({
+  collapsed: true
+});
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
